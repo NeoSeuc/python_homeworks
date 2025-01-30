@@ -1,4 +1,6 @@
 import datetime
+
+
 class News:
     def __init__(self, title: str, text: str, city: str):
         self.title = title
@@ -16,3 +18,11 @@ class News:
                 {self.city}  {self.publish_date}
         _________________________________        
                 """
+
+    def to_dict(self):
+        # Return a dictionary representation of the object
+        return {
+            'title': self.title,
+            'text': self.text,
+            'city': self.city
+        }
