@@ -1,6 +1,5 @@
 from OOP_Homework.News import News
 from OOP_Homework.PrivatAd import PrivateAd
-import os
 
 file = open("articles.txt", mode="a")
 
